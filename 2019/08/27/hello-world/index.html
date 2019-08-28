@@ -11,7 +11,7 @@
 
     <title>
         
-        Hello World - FinalCom的博客 | FinalCom&#39;s Blog
+        使用Hexo生成自己的blog - FinalCom的博客 | FinalCom&#39;s Blog
         
     </title>
 
@@ -89,7 +89,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-简单使用"><span class="toc-text">1. 简单使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用npm进行安装"><span class="toc-text">使用npm进行安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在目录中初始化blog文件"><span class="toc-text">在目录中初始化blog文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建一篇新文章"><span class="toc-text">创建一篇新文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成静态文件"><span class="toc-text">生成静态文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启动本地服务"><span class="toc-text">启动本地服务</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-搭建自己的blog"><span class="toc-text">2. 搭建自己的blog</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化blog文件"><span class="toc-text">初始化blog文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置ssh密钥"><span class="toc-text">配置ssh密钥</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新建github-pages-页"><span class="toc-text">新建github pages 页</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署"><span class="toc-text">部署</span></a></li></ol></li></ol>
 </div>
     
 </div>
@@ -120,7 +120,7 @@
 
 <div class="post-container">
     <div class="post-title">
-        Hello World
+        使用Hexo生成自己的blog
     </div>
 
     <div class="post-meta">
@@ -132,19 +132,50 @@
 </span>
     </div>
     <div class="post-content ">
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <hr>
+<p>Hexo是一个快速、简洁且高效的博客框架。可以利用hexo快速建立自己的个人博客。</p>
+<hr>
+<h2 id="1-简单使用"><a href="#1-简单使用" class="headerlink" title="1. 简单使用"></a>1. 简单使用</h2><h3 id="使用npm进行安装"><a href="#使用npm进行安装" class="headerlink" title="使用npm进行安装"></a>使用npm进行安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="在目录中初始化blog文件"><a href="#在目录中初始化blog文件" class="headerlink" title="在目录中初始化blog文件"></a>在目录中初始化blog文件</h3><figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init <span class="string">[博客文件夹]</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="创建一篇新文章"><a href="#创建一篇新文章" class="headerlink" title="创建一篇新文章"></a>创建一篇新文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"我的博客"</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate/ hexo g</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h3 id="启动本地服务"><a href="#启动本地服务" class="headerlink" title="启动本地服务"></a>启动本地服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+
+<p>打开浏览器 127.0.0.1:4000 端口就可以看到自己的blog了。</p>
+<h2 id="2-搭建自己的blog"><a href="#2-搭建自己的blog" class="headerlink" title="2. 搭建自己的blog"></a>2. 搭建自己的blog</h2><p>想要别人能访问自己的blog，而不是仅仅在本地pc上访问，就需要有自己的blog网址，可以使用github pages 来完成自己的站点。</p>
+<h3 id="初始化blog文件"><a href="#初始化blog文件" class="headerlink" title="初始化blog文件"></a>初始化blog文件</h3><p>在一个你想要放blog的文件夹中进行初始化，会为我们创建相关的我们blog文件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ $ hexo init [博客文件夹]</span><br></pre></td></tr></table></figure>
+
+<p>文件目录如下:</p>
+<figure class="highlight sqf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── <span class="variable">_config</span>.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── <span class="variable">_drafts</span></span><br><span class="line">|   └── <span class="variable">_posts</span></span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<p>source：<br>是我们存放自己blog相关文档和资源的文件，可以存放文档，图片等，会在我们的blog上进行相应的显示。_post文件夹下用于存放markdown文件，也就是blog正文。</p>
+<p>_config.yml：<br> 网站的 配置 信息，您可以在此配置大部分的参数。</p>
+<p> themes:<br>用于存放blog的主题，hexo会根据themes的文件来生成静态页面。</p>
+<h3 id="配置ssh密钥"><a href="#配置ssh密钥" class="headerlink" title="配置ssh密钥"></a>配置ssh密钥</h3><p>打开git bash，检查是本机否存在密钥文件。</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="keyword">cd</span> ~<span class="string">/.</span> ssh</span><br></pre></td></tr></table></figure>
+
+<p>不存在的话，需要添加ssh密钥：</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>ssh-keygen -t rsa -C <span class="string">"your_email@example.com"</span></span><br></pre></td></tr></table></figure>
+
+<p>如果存在直接将密钥文件id_rsa.pub的内容复制到github -&gt;setting-&gt;SSH keys中.<br>测试密钥是否添加成功：</p>
+<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ssh -T git<span class="symbol">@github</span>.com</span><br></pre></td></tr></table></figure>
+
+<p>反馈如下表示成功：</p>
+<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The authenticity <span class="keyword">of</span> host <span class="comment">'github.com (207.97.227.239)' can't be established.</span></span><br><span class="line">RSA <span class="keyword">key</span> fingerprint <span class="keyword">is</span> <span class="number">16</span>:<span class="number">27</span>:ac:a5:<span class="number">76</span>:<span class="number">28</span>:<span class="number">2</span>d:<span class="number">36</span>:<span class="number">63</span>:<span class="number">1</span>b:<span class="number">56</span>:<span class="number">4</span>d:eb:df:a6:<span class="number">48.</span></span><br><span class="line">Are you sure you want <span class="keyword">to</span> <span class="keyword">continue</span> connecting (yes/no)?</span><br></pre></td></tr></table></figure>
+
+<p>输入yes即可。</p>
+<h3 id="新建github-pages-页"><a href="#新建github-pages-页" class="headerlink" title="新建github pages 页"></a>新建github pages 页</h3><p>在github中新建repository，仓库名必须是你的[usrname].github.io<br>新建完成后打开repository，并复制ssh地址到_config.yml中的以下配置位置中：</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> git [必须为git]</span><br><span class="line"><span class="symbol">  repository:</span> 自己的ssh地址</span><br><span class="line"><span class="symbol">  branch:</span> master</span><br></pre></td></tr></table></figure>
+
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>将本地代码部署到GitHub pags页上去</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy / hexo -d</span><br></pre></td></tr></table></figure>
+
+<p>打开[usrname].github.io网址即可访问自己的blog啦</p>
 
         
             <div class="donate-container">
@@ -175,6 +206,14 @@
 <footer class="footer">
     <ul class="list-inline text-center">
         
+        <li>
+            <a target="_blank" href="https://twitter.com/zhang yu">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-twitter"></i>
+                            </span>
+            </a>
+        </li>
+        
         
         <li>
             <a target="_blank" href="https://www.zhihu.com/people/张雨">
@@ -195,6 +234,14 @@
         </li>
         
 
+        
+        <li>
+            <a target="_blank" href="https://www.facebook.com/zhang yu">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-facebook"></i>
+                            </span>
+            </a>
+        </li>
         
 
         
@@ -221,6 +268,12 @@
         <span>/</span>
         
         <span><a href="https://www.zhihu.com/">zhihu</a></span>
+        <span>/</span>
+        
+        <span><a href="https://twitter.com/home">twitter</a></span>
+        <span>/</span>
+        
+        <span><a href="https://www.facebook.com/?ref=tn_tnmn">facebook</a></span>
         <span>/</span>
         
     </p>
